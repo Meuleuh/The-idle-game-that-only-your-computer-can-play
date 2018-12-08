@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System.ComponentModel;
 
 namespace The_idle_game_that_only_your_computer_can_play
 {
@@ -10,6 +12,7 @@ namespace The_idle_game_that_only_your_computer_can_play
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
