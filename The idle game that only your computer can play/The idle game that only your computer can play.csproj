@@ -58,11 +58,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ressources\All ressources.cs" />
+    <Compile Include="Ressources\Ressource class.cs" />
     <Compile Include="The Game Itself.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram.cd" />
     <None Include="Text Documents\Notes for development.md" />
     <None Include="Text Documents\Program organisation.md" />
   </ItemGroup>
@@ -79,11 +82,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Text Documents\Ressource list.txt" />
-    <Content Include="Text Documents\Ressources.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Text Documents\Ressource list.html" />
+    <None Include="Text Documents\Ressource list.txt" />
+    <None Include="Text Documents\Ressources.accdb" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Code\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
