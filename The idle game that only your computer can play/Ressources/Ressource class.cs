@@ -1,16 +1,30 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace The_idle_game_that_only_your_computer_can_play.Text_Documents
 {
     public class Ressource
     {
-        readonly string name;
-        long level;
-        readonly long basePrice;
-        readonly long amountPerLevel;
-        readonly long sellPrice;
-        long amountProduced;
-        readonly List<(Ressource, long)> dependency;
-        long nextUpgradePrice;
+        public string Name { get; }
+        public double Level { get; set; } = 0;
+        public double BasePrice { get; }
+        public double AmountPerLevel { get; }
+        public double SellPrice { get; }
+        public double AmountProduced { get; set; } = 0;
+        public List<(Ressource, double)> Dependency { get; } = new List<(Ressource, double)>{};
+        public double NextUpgradePrice { get; set; }
+        public Ressource(string name, double basePrice, double amountPerLevel, double sellPrice, List<(Ressource, double)> dependency)
+        {
+            Name = name;
+            BasePrice = basePrice;
+            AmountPerLevel = amountPerLevel;
+            SellPrice = sellPrice;
+            Dependency = dependency;
+            UpdatePrice();
+        }
+        public void UpdatePrice()
+        {
+                NextUpgradePrice = BasePrice * Math.Pow(1.05, Level);
+        }
     }
 }

@@ -31,50 +31,52 @@ Load all the data of the selected save file
 
 (Have a look on the ressources file if you want the full list + Base price + Dependencies)
 
-Price function when Next Item Level is higher than 1 (Rounded Up): [Actual Price] = [Base Price] × (1 + (5 ^ [Actual Level])%)
-
-When the Next Item Level is 1, the base price is directly taken
+Price function (Rounded Up): [Next Level Price] = [Base Price] × 1,05 ^ [Actual Level]
 
 As exemple of the function, let's use Wood Log
 
 **Level 1:**
 
-Actual Price = 5$
+Level 1 Price = 5$ × 1,05⁰
+
+Level 1 Price = 5$ × 1
+
+Level 1 Price = 5$
 
 **Level 2:**
 
-Actual Price = 5$ × (1 + (5¹)%)
+Level 2 Price = 5$ × 1,05¹
 
-Actual Price = 5$ × 1,05
+Level 2 Price = 5$ × 1,05
 
-Actual Price = 5,25$
+Level 2 Price = 5,25$
 
-Actual Price = 6$
+Level 2 Price = 6$
 
 **Level 3**
 
-Actual Price = 5$ × (1 + (5²)%)
+Level 3 Price = 5$ × 1,05²
 
-Actual Price = 5$ × 1,25
+Level 3 Price = 5$ × 1,25
 
-Actual Price = 6,25$
+Level 3 Price = 5,5125$
 
-Actual Price = 7 $
+Level 3 Price = 6 $
 
 **Grid 1-10**
 
-| Level (Actual = Level-1) |  Price |
-|:------------------------:|:------:|
-|             1            |   5$   |
-|             2            |   6$   |
-|             3            |   7$   |
-|             4            |   12$  |
-|             5            |   37$  |
-|             6            |  162$  |
-|             7            |  787$  |
-|             8            |  3912$ |
-|             9            | 19537$ |
-|            10            | 97662$ |
+| Level | Price |
+|:-----:|:-----:|
+|   1   |  5 $  |
+|   2   |  6 $  |
+|   3   |  6 $  |
+|   4   |  6 $  |
+|   5   |  7 $  |
+|   6   |  7 $  |
+|   7   |  7 $  |
+|   8   |  8 $  |
+|   9   |  8 $  |
+|   10  |  8 $  |
 
 *I hope you understand now?*
 

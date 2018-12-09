@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace The_idle_game_that_only_your_computer_can_play
 {
-    class TheGameItself
+    public partial class TheGameItself
     {
         static void Main(string[] args)
         {

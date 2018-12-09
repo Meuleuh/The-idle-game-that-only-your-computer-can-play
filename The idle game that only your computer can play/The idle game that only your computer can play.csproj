@@ -65,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram.cd" />
+    <None Include="Class Diagram.cd" />
     <None Include="Text Documents\Notes for development.md" />
     <None Include="Text Documents\Program organisation.md" />
   </ItemGroup>
