@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace The_idle_game_that_only_your_computer_can_play.Text_Documents
+namespace The_idle_game_that_only_your_computer_can_play
 {
     public class Ressource
     {
