@@ -155,7 +155,7 @@ namespace The_idle_game_that_only_your_computer_can_play
             );
 
         //18 : Wooden Small House Foundations
-        static Ressource Wooden_Small_House_Foundations = new Ressource(
+        static Ressource Wooden_Small_House_Foundation = new Ressource(
             name: "Wooden Small House Foundation",
             basePrice: 100000,
             amountPerLevel: 1,
@@ -178,7 +178,7 @@ namespace The_idle_game_that_only_your_computer_can_play
             basePrice: 250000,
             amountPerLevel: 1,
             sellPrice: 25000,
-            dependency: new List<(Ressource, double)> { (Wooden_Small_House_Foundations, 1), (Wooden_Small_House_Roof, 1), (Wooden_Plank, 250) }
+            dependency: new List<(Ressource, double)> { (Wooden_Small_House_Foundation, 1), (Wooden_Small_House_Roof, 1), (Wooden_Plank, 250) }
             );
 
         //21 : Wooden Medium House Foundation
@@ -359,6 +359,204 @@ namespace The_idle_game_that_only_your_computer_can_play
             amountPerLevel: 100,
             sellPrice: 2,
             dependency: new List<(Ressource, double)> { (Wooden_Plank, 1), (Feather, 100) }
+            );
+
+        //41 : Stone
+        static Ressource Stone = new Ressource(
+            name: "Stone",
+            basePrice: 20,
+            amountPerLevel: 1,
+            sellPrice: 2,
+            dependency: null
+            );
+
+        //42 : Cutted Stone
+        static Ressource Cutted_Stone = new Ressource(
+            name: "Cutted Stone",
+            basePrice: 50,
+            amountPerLevel: 1,
+            sellPrice: 3,
+            dependency: new List<(Ressource, double)> { (Stone, 1) }
+            );
+
+        //43 : Stone Rod
+        static Ressource Stone_Rod = new Ressource(
+            name: "Stone Rod",
+            basePrice: 50,
+            amountPerLevel: 1,
+            sellPrice: 3,
+            dependency: new List<(Ressource, double)> { (Stone, 1)}
+            );
+
+        //44 : Stone Pickaxe Head
+        static Ressource Stone_Pickaxe_Head = new Ressource(
+            name: "Stone Pickaxe Head",
+            basePrice: 75,
+            amountPerLevel: 1,
+            sellPrice: 5,
+            dependency: new List<(Ressource, double)> { (Stone, 2) }
+            );
+
+        //45 : Stone Shovel Head
+        static Ressource Stone_Shovel_Head = new Ressource(
+            name: "Stone Shovel Head",
+            basePrice: 75,
+            amountPerLevel: 1,
+            sellPrice: 5,
+            dependency: new List<(Ressource, double)> { (Stone, 2) }
+            );
+
+        //46 : Stone Hoe Head
+        static Ressource Stone_Hoe_Head = new Ressource(
+            name: "Stone Hoe Head",
+            basePrice: 75,
+            amountPerLevel: 1,
+            sellPrice: 5,
+            dependency: new List<(Ressource, double)> { (Stone, 2) }
+            );
+
+        //47 : Stone Sword Blade
+        static Ressource Stone_Sword_Blade = new Ressource(
+            name: "Stone Sword Blade",
+            basePrice: 75,
+            amountPerLevel: 1,
+            sellPrice: 5,
+            dependency: new List<(Ressource, double)> { (Stone, 2) }
+            );
+
+        //48 : Stone Long Sword Blade
+        static Ressource Stone_Long_Sword_Blade = new Ressource(
+            name: "Stone Long Sword Blade",
+            basePrice: 100,
+            amountPerLevel: 1,
+            sellPrice: 6,
+            dependency: new List<(Ressource, double)> { (Stone, 3) }
+            );
+
+        //49 : Stone Small House Foundation
+        static Ressource Stone_Small_House_Foundation = new Ressource(
+            name: "Stone Small House Foundation",
+            basePrice: 200000,
+            amountPerLevel: 1,
+            sellPrice: 15000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 64), (Wooden_Beam, 30) }
+            );
+
+        //50 : Stone Small House Roof
+        static Ressource Stone_Small_House_Roof = new Ressource(
+            name: "Stone Small House Roof",
+            basePrice: 100000,
+            amountPerLevel: 1,
+            sellPrice: 10000,
+            dependency: new List<(Ressource, double)> { (Wooden_Beam, 22) }
+            );
+
+        //51 : Stone Small House
+        static Ressource Stone_Small_House = new Ressource(
+            name: "Stone Small House",
+            basePrice: 500000,
+            amountPerLevel: 1,
+            sellPrice: 50000,
+            dependency: new List<(Ressource, double)> { (Stone_Small_House_Foundation, 1), (Stone_Small_House_Roof, 1), (Wooden_Plank, 100), (Cutted_Stone, 150) }
+            );
+
+        //52 : Stone Medium House Foundation
+        static Ressource Stone_Medium_House_Foundation = new Ressource(
+            name: "Stone Medium House Foundation",
+            basePrice: 400000,
+            amountPerLevel: 1,
+            sellPrice: 30000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 100), (Wooden_Beam, 56) }
+            );
+
+        //53 : Stone Medium House Roof
+        static Ressource Stone_Medium_House_Roof = new Ressource(
+            name: "Stone Medium House Roof",
+            basePrice: 210000,
+            amountPerLevel: 1,
+            sellPrice: 21000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 4), (Wooden_Beam, 32) }
+            );
+
+        //54 : Stone Medium House
+        static Ressource Stone_Medium_House = new Ressource(
+            name: "Stone Medium House",
+            basePrice: 1000000,
+            amountPerLevel: 1,
+            sellPrice: 100000,
+            dependency: new List<(Ressource, double)> { (Stone_Medium_House_Foundation, 1), (Stone_Medium_House_Roof, 1), (Wooden_Plank, 160), (Cutted_Stone, 240) }
+            );
+
+        //55 : Stone Big House Foundation
+        static Ressource Stone_Big_House_Foundation = new Ressource(
+            name: "Stone Big House Foundation",
+            basePrice: 800000,
+            amountPerLevel: 1,
+            sellPrice: 60000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 144), (Wooden_Beam, 110) }
+            );
+
+        //56 : Stone Big House Second Floor
+        static Ressource Stone_Big_House_Second_Floor = new Ressource(
+            name: "Stone Big House Second Floor",
+            basePrice: 800000,
+            amountPerLevel: 1,
+            sellPrice: 60000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 144), (Wooden_Beam, 110) }
+            );
+
+        //57 : Stone Big House Roof
+        static Ressource Stone_Big_House_Roof = new Ressource(
+            name: "Stone Big House Roof",
+            basePrice: 420000,
+            amountPerLevel: 1,
+            sellPrice: 42000,
+            dependency: new List<(Ressource, double)> { (Wooden_Pillar, 16), (Wooden_Beam, 48) }
+            );
+
+        //58 : Stone Big House
+        static Ressource Stone_Big_House = new Ressource(
+            name: "Stone Big House",
+            basePrice: 2000000,
+            amountPerLevel: 1,
+            sellPrice: 100000,
+            dependency: new List<(Ressource, double)> { (Stone_Big_House_Foundation, 1), (Stone_Big_House_Roof, 1), (Stone_Big_House_Second_Floor, 1), (Cutted_Stone, 675), (Wooden_Plank, 450) }
+            );
+
+        //59 : Stone Maul
+        static Ressource Stone_Maul = new Ressource(
+            name: "Stone Maul",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 9,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone, 1) }
+            );
+
+        //60 : Stone Mace
+        static Ressource Stone_Mace = new Ressource(
+            name: "Stone Mace",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 9,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone, 1) }
+            );
+
+        //61 : Stone Spear
+        static Ressource Stone_Spear = new Ressource(
+            name: "Stone Spear",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 9,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone, 1) }
+            );
+
+        //62 : Wooden Spear
+        static Ressource Wooden_Spear = new Ressource(
+            name: "Wooden Spear",
+            basePrice: 20,
+            amountPerLevel: 1,
+            sellPrice: 2,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1) }
             );
 
         //More to come...
