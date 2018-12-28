@@ -559,6 +559,60 @@ namespace The_idle_game_that_only_your_computer_can_play
             dependency: new List<(Ressource, double)> { (Wood_Log, 1) }
             );
 
+        //63 : Stone Mortar And Pestle
+        static Ressource Stone_Mortar_And_Pestle = new Ressource(
+            name: "Stone Mortar And Pestle",
+            basePrice: 40,
+            amountPerLevel: 1,
+            sellPrice: 4,
+            dependency: new List<(Ressource, double)> { (Stone, 1) }
+            );
+
+        //64 : Stone Pickaxe
+        static Ressource Stone_Pickaxe = new Ressource(
+            name: "Stone Pickaxe",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 15,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Pickaxe_Head, 1) }
+            );
+
+        //65 : Stone Shovel
+        static Ressource Stone_Shovel = new Ressource(
+            name: "Stone Shovel",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 15,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Shovel_Head, 1) }
+            );
+
+        //66 : Stone Hoe
+        static Ressource Stone_Hoe = new Ressource(
+            name: "Stone Hoe",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 15,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Hoe_Head, 1) }
+            );
+
+        //67 : Stone Sword
+        static Ressource Stone_Sword = new Ressource(
+            name: "Stone Sword",
+            basePrice: 150,
+            amountPerLevel: 1,
+            sellPrice: 15,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Sword_Blade, 1) }
+            );
+
+        //68 : Stone Long Sword
+        static Ressource Stone_Long_Sword = new Ressource(
+            name: "Stone Long Sword",
+            basePrice: 200,
+            amountPerLevel: 1,
+            sellPrice: 20,
+            dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Long_Sword_Blade, 1) }
+            );
+
         //More to come...
     }
 }
