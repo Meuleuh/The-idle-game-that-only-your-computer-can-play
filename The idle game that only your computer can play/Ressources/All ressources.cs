@@ -365,9 +365,9 @@ namespace The_idle_game_that_only_your_computer_can_play
         static Ressource Stone = new Ressource(
             name: "Stone",
             basePrice: 20,
-            amountPerLevel: 1,
+            amountPerLevel: 7,
             sellPrice: 2,
-            dependency: null
+            dependency: new List<(Ressource, double)> { (Wooden_Pickaxe, 1) }
             );
 
         //42 : Cutted Stone
@@ -611,6 +611,15 @@ namespace The_idle_game_that_only_your_computer_can_play
             amountPerLevel: 1,
             sellPrice: 20,
             dependency: new List<(Ressource, double)> { (Wood_Log, 1), (Stone_Long_Sword_Blade, 1) }
+            );
+
+        //69 : Wooden Pickaxe
+        static Ressource Wooden_Pickaxe = new Ressource(
+            name: "Wooden Pickaxe",
+            basePrice: 50,
+            amountPerLevel: 1,
+            sellPrice: 10,
+            dependency: new List<(Ressource, double)> { (Wooden_Plank, 2) }
             );
 
         //More to come...
