@@ -1,1 +1,3 @@
 # The idle game that only your computer can play
+
+Actually in pause due to a lack of free time, will be resumed later...
